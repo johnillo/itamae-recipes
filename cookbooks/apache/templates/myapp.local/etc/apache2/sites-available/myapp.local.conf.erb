@@ -2,6 +2,7 @@
   ServerAdmin <%= @serveradmin %>
   ServerName <%= @servername %>
 
+  ProxyPreserveHost On
   ProxyPass "/" "<%= @proxypass %>"
   ProxyPassReverse "/" "<%= @proxypass %>"
 

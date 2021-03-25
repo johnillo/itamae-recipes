@@ -13,6 +13,7 @@ install_packages = [
 ]
 enabled_modules = [
   'proxy',
+  'proxy_http',
   'headers'
 ]
 
