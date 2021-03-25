@@ -1,0 +1,9 @@
+CREATE USER '<%= @user %>'@'%' IDENTIFIED BY '<%= @password %>';
+
+CREATE DATABASE <%= @db_name %> DEFAULT CHARACTER SET utf8;
+GRANT ALL ON <%= @db_name %>.* TO '<%= @user %>'@'%';
+
+CREATE DATABASE <%= @testdb_name %> DEFAULT CHARACTER SET utf8;
+GRANT ALL ON <%= @testdb_name %>.* TO '<%= @user %>'@'%';
+
+FLUSH PRIVILEGES;

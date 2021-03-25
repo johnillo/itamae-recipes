@@ -1,0 +1,24 @@
+nodename: "myapp.local"
+system:
+  locale: ja_JP.UTF-8
+  timezone: UTC
+package_update:
+  yum_options: ""
+docker:
+  user: vagrant
+  compose_version: 1.27.4
+  workdir: /var/www/html/myapp
+mysql:
+  db_name: myapp
+  testdb_name: myapp_test
+  user: vagrant
+  password: vagrant
+  address_binding: false
+apache:
+  proxypass: http://localhost:8080/
+  serveradmin: dev@myapp.local
+  sites_available:
+    - myapp.local
+  mods_available:
+    - security2
+  mod_security: true

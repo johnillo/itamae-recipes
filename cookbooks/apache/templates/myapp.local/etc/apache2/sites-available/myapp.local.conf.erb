@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+  ServerAdmin <%= @serveradmin %>
+  ServerName <%= @servername %>
+
+  ProxyPass "/" "<%= @proxypass %>"
+  ProxyPassReverse "/" "<%= @proxypass %>"
+
+  ErrorLog ${APACHE_LOG_DIR}/error.log
+  CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

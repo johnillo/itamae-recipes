@@ -1,0 +1,5 @@
+include_recipe '../cookbooks/package_update'
+include_recipe '../cookbooks/system'
+include_recipe '../cookbooks/docker'
+include_recipe '../cookbooks/mysql'
+include_recipe '../cookbooks/apache'

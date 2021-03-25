@@ -1,0 +1,9 @@
+# itamae
+.bundle/
+vendor/
+
+# vagrant
+.vagrant/
+
+# log files
+*.log
